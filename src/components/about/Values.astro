@@ -1,58 +1,91 @@
----
-const values = [
-  [
-    {
-      ref: '01',
-      name: 'Excellence',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    },
-    {
-      ref: '02',
-      name: 'Innovation',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    },
-  ],
-  [
-    {
-      ref: '03',
-      name: 'Teamwork',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    },
-    {
-      ref: '04',
-      name: 'Respect',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    },
-  ],
-];
----
-
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-8 lg:gap-12">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our Values</h2>
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our Values: Guiding Principles for a Sustainable and Thriving Space Industry</h2>
+      <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+        At Green Orbit Digital, our values form the foundation of everything we do. They shape our strategies, inspire our partnerships, and drive our mission to empower space businesses with sustainable, innovative marketing solutions. Each of these values reflects our commitment to fostering a responsible, forward-thinking space industry while supporting the broader sustainability agenda.
+      </p>
       <div class="grid gap-8 lg:grid-cols-2">
-        {
-          values.map((column, index) => (
-            <div class:list={['space-y-8', index === 1 && 'lg:mt-16']}>
-              {column.map((value) => (
-                <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
-                  <p class="text-sm">{value.ref}</p>
-                  <div class="flex flex-col gap-4">
-                    <h3 class="text-xl font-medium">{value.name}</h3>
-                    <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-                      {value.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+        <!-- First Column -->
+        <div>
+          <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+            <p class="text-sm">01</p>
+            <div class="flex flex-col gap-4">
+              <h3 class="text-xl font-medium">Sustainability</h3>
+              <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                We are unwavering in our commitment to sustainability. Every decision we make is grounded in environmental and ethical responsibility. By integrating eco-friendly practices into every aspect of our work, we ensure that marketing strategies for the space industry align with the principles of environmental responsibility, helping our clients contribute to a greener future both on Earth and beyond.
+              </p>
             </div>
-          ))
-        }
+          </div>
+
+          <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+            <p class="text-sm">02</p>
+            <div class="flex flex-col gap-4">
+              <h3 class="text-xl font-medium">Innovation</h3>
+              <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                Creativity and forward-thinking define our approach to sustainable marketing. We embrace emerging technology and evolving challenges within the space sector to craft innovative solutions that position our clients as leaders in sustainability and technology. Our work pushes boundaries and sets new standards for what's possible in space-driven marketing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Column -->
+        <div>
+          <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+            <p class="text-sm">03</p>
+            <div class="flex flex-col gap-4">
+              <h3 class="text-xl font-medium">Collaboration</h3>
+              <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                We believe that partnerships power progress. By forging strong relationships with our clients, partners, and stakeholders, we create campaigns that amplify impact. Collaboration is the cornerstone of our approach, enabling us to leverage diverse expertise and perspectives to achieve shared goals and create lasting change in the space industry.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+            <p class="text-sm">04</p>
+            <div class="flex flex-col gap-4">
+              <h3 class="text-xl font-medium">Responsibility</h3>
+              <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                As advocates for sustainability, we take our responsibility seriously. Our work goes beyond delivering exceptional services; we actively contribute to preserving our planet and protecting the outer space environment. Every decision we make ensures that our efforts leave a positive, lasting impact on both Earth and the cosmos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Values Section (Optional) -->
+      <div class="grid gap-8 lg:grid-cols-2 mt-12">
+        <div>
+          <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+            <p class="text-sm">05</p>
+            <div class="flex flex-col gap-4">
+              <h3 class="text-xl font-medium">Work-life Balance</h3>
+              <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                We understand that a thriving business is built on a foundation of well-being. We prioritize a healthy balance between work and personal life, recognizing that sustainable practices start with supporting the people behind them. Our team's well-being is at the core of our success and helps us maintain our commitment to both our clients and the environment.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+            <p class="text-sm">06</p>
+            <div class="flex flex-col gap-4">
+              <h3 class="text-xl font-medium">Commitment</h3>
+              <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                Dedication drives our success. We are deeply committed to our mission, our clients, and each other. Integrity, loyalty, and perseverance guide every effort we make. At Green Orbit Digital, commitment means seeing every challenge as an opportunity to create meaningful, sustainable change that benefits both the space industry and the planet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Values in Action -->
+      <div class="mt-12 text-center">
+        <h3 class="text-xl font-medium">Our Values in Action</h3>
+        <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+          Every campaign, partnership, and project we undertake reflects our unwavering dedication to these values. From promoting sustainable practices in space exploration to fostering an environment of mutual respect and innovation, Green Orbit Digital lives its values every day. Together, we are shaping a brighter future for the space industry and the planet we share.
+        </p>
       </div>
     </div>
   </div>
